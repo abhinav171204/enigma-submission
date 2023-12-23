@@ -1,0 +1,13 @@
+{
+    "title": "Login",
+    "form": {
+      "action": "/login",
+      "method": "post",
+      "fields": [
+        { "label": "Username", "type": "text", "id": "username", "name": "username", "required": true },
+        { "label": "Password", "type": "password", "id": "password", "name": "password", "required": true }
+      ],
+      "button": { "type": "submit", "text": "Login" }
+    }
+  }
+  

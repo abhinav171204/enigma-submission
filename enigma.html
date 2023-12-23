@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+            body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('back.jpeg'); /* Replace with your actual image URL */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+
+        #login-container {
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: rgba(111, 181, 222);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #eff3f5;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        #loginButton {
+            background-color: #2980b9;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #loginButton:hover {
+            background-color: #256d99;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="login-container">
+        <h1>Login</h1>
+
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button id="loginButton" type="button" onclick="validateLogin()">Login</button>
+        </form>
+    </div>
+
+    <script>
+        function validateLogin() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Replace with your actual validation logic
+            if (username === '1JT22CS014' && password === 'ANAGHA') {
+                alert('Login successful!');
+                window.location.href = 'enigma.html';
+                // Redirect to another page or perform additional actions here
+            } else {
+                alert('Invalid username or password. Please try again.');
+            }
+        }
+    </script>
+
+</body>
+</html>
